@@ -1,0 +1,153 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+html,
+body {
+  margin: 0 auto;
+  padding: 0px;
+  display: block;
+}
+
+main {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 891px) {
+  .wheat{
+    display: none;
+  }
+  .location{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 891px) {
+  .logo {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .info-block {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media screen and (max-width: 1059px) and (min-width: 891px) {
+  .logo {
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+  .info-block {
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+}
+
+@media screen and (min-width: 1060px) {
+  .col {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+
+@media screen and (min-width: 891px) {
+  .col {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+
+.container {
+  height: 528px;
+  background-image: url(/public/assets/images/gluten-free.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  text-shadow: 1.5px 1px black;
+}
+
+.logo {
+  display: flex;
+  margin: 0 auto;
+  min-height: 72px;
+  font-size: 30px;
+  max-width: 1024px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.search-content {
+  padding: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+
+input{
+  text-align: left;
+  width: 240px;
+  height: 30px;
+  outline: none;
+  border-radius: 40px;
+  border: none;
+}
+
+input[type=search]{
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.col {
+  max-width: 1024px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  min-height: 10vh;
+  height: 100%;
+  width: 90%;
+}
+
+.info-block {
+  font-size: 25px;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 75px;
+}
+
+.info-block p {
+  font-size: 16px;
+  margin-top: 8px;
+  line-height: 26px;
+  color: #8F95A3;
+}
+
+.location{
+  user-select: none;
+  width: auto;
+  height: 300px;
+  margin-top: 10%;
+}
+
+.wheat{
+  user-select: none;
+  width: auto;
+  height: 280px;
+  margin-top: 10%;
+}
